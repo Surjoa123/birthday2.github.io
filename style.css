@@ -1,7 +1,7 @@
 :root{
     /*set your starting image here*/
     /* --image: url("https://i.imgur.com/Q2ZST9f.jpeg"); */
-    --image: url("/img/image1.jpg");
+    --image: url("./img/image1.jpg");
     
     
     --color: #71d8f5;
