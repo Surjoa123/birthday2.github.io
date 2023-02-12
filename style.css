@@ -1,7 +1,7 @@
 :root{
     /*set your starting image here*/
     /* --image: url("https://i.imgur.com/Q2ZST9f.jpeg"); */
-    --image: url("./img/image1.jpg");
+    --image: url("/img/image1.jpg");
     
     
     --color: #71d8f5;
@@ -21,7 +21,7 @@
   }
   header {
     text-align: center;
-    width: 50vw;
+    width: 95vw;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px 30px 30px 30px;
@@ -51,7 +51,7 @@
     color: red;
     text-align: center;
     font-family: "Overlock";
-    font-size: 75px;
+    font-size: 60px;
     text-shadow: 8px 8px 0 #304FFE, 6px 6px 0 #304FFE, 4px 4px 0 #304FFE, 2px 2px 0 #304FFE;
     animation-name: text;
     animation-duration: 1.5s;
@@ -178,10 +178,67 @@
     }
   }
   
+  /* ---> */
   
-  
- /* @media only screen and(max-width: 1990px){
-  .hosting h1 {
-    width: 50vh;
+  .title-word {
+    animation: color-animation 4s linear infinite;
   }
- } */
+  
+  .title-word-1 {
+    --color-1: #ef5f11;
+    --color-2: #070707;
+    --color-3: #fc0a06;
+  }
+  
+  .title-word-2 {
+    --color-1: gold;
+    --color-2: #d205fb;
+    --color-3: #0f2e30;
+  }
+  
+  .title-word-3 {
+    --color-1: #8604f7;
+    --color-2: #0606fc;
+    --color-3: #ecfd05;
+  }
+  
+  
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles.  */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 33vh;
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 5vw;
+    text-transform: uppercase;
+  }
+  @media (min-width: 250px) and (max-width:1000px){
+    .container{
+      
+      place-items: center;  
+      height: 15vh;
+
+    }
+    #background{
+      height:44vh ;
+    }
+    
+  }
+
